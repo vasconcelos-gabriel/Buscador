@@ -1,1 +1,1 @@
-# Buscador de CEPs feito com React
+# Buscador de CEPs
