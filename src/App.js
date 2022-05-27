@@ -23,7 +23,12 @@ function App() {
       setInput('')
     }
   }
+  function vazio(){
+    if (cep.complemento.length > 0){
+      <span>Complemento: {cep.complemento}</span>
+    }
 
+  }
   return (
     <div className="container">
       <h1 className="title">Buscador CEP</h1>
@@ -40,14 +45,18 @@ function App() {
         </button>
       </div>
 
-      {Object.keys(cep).lenght > 0 && (
+      {Object.keys(cep).length > 0 && (
+             
              <main className="main">
               <h2>CEP: {cep.cep}</h2>
               <span>Rua: {cep.logradouro}</span>
+              {Object.keys(cep.complemento).length > 0 &&(
               <span>Complemento: {cep.complemento}</span>
+              )}
               <span>Bairro: {cep.bairro}</span>
               <span>Cidade: {cep.localidade}</span>
               <span>UF: {cep.uf}</span>
+              
             </main>
       )}
 
