@@ -23,12 +23,8 @@ function App() {
       setInput('')
     }
   }
-  function vazio(){
-    if (cep.complemento.length > 0){
-      <span>Complemento: {cep.complemento}</span>
-    }
 
-  }
+
   return (
     <div className="container">
       <h1 className="title">Buscador CEP</h1>
